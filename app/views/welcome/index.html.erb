@@ -1,0 +1,19 @@
+<h1>Welcome</h1>
+
+<button class="listall">Click to View</button>
+
+<ul id="characters">
+
+</ul>
+
+<h2 class="center">Games</h2>
+<hr />
+<div class="row">
+  <div class="col s12 m6">
+    <button class="btn">Show Form</button>
+    <ul id="listall">
+      <% characters.each do |character| %>
+        <%= render partial: 'welcome' %>
+      <% end %>
+    </ul>
+  </div>
